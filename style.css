@@ -1,0 +1,131 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+}
+
+header.hero {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.title {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeInDown 2s;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #fff;
+    margin: 40px 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    animation: fadeIn 2s;
+}
+
+.card-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    animation: fadeIn 2s;
+}
+
+.features {
+    padding: 40px 20px;
+    background: #f0f4f8;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+}
+
+.section-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 3s;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-text {
+    width: 60%;
+    text-align: center;
+}
+
+.feature-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: fadeInUp 2s;
+}
+
+.feature-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    animation: fadeInUp 2s;
+}
+
+.footer-text {
+    margin-top: 40px;
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    background: #667eea;
+    color: #fff;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
